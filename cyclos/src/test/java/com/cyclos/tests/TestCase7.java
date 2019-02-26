@@ -23,11 +23,12 @@ public class TestCase7 {
 		  driver.findElement(By.xpath("//span[@class='menuText'][contains(text(),'Accounts')]")).click();
 		  driver.findElement(By.xpath("//span[contains(text(),'Manage Loans')]")).click();
 		  driver.findElement(By.id("memberUsername")).sendKeys("manzoor");
+		  Thread.sleep(1000);
 		  Actions a = new Actions(driver);
 		  a.sendKeys(Keys.ENTER).build().perform();
 		  driver.findElement(By.xpath("//input[@value='Search']")).click();
-		  
-		  driver.findElement(By.xpath("//tbody//tbody//tr[2]//td[4]//img[1]")).click();
+		  Thread.sleep(3000);
+		  driver.findElement(By.xpath("//tbody//tbody//tr[2]//td[7]//img[1]")).click();
 		  driver.findElement(By.id("amountText")).sendKeys("500");
 		  driver.findElement(By.xpath("//input[@value='Repay']")).click();
 		  

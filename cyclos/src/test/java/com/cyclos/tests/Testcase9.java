@@ -81,7 +81,7 @@ public class Testcase9 {
 		}
 
 		driver.switchTo().alert().accept();
-
+		Thread.sleep(2000);
 		driver.findElement(By.id("cyclosUsername")).sendKeys("manzoor");
 		driver.findElement(By.id("cyclosPassword")).sendKeys("manzoor");
 		driver.findElement(By.xpath("//td[@colspan='2']//input[@value='Submit']")).click();
